@@ -2,53 +2,57 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Noto Sans', sans-serif;  /*setting bg color to cream */
+    font-family: 'Sofia Sans', sans-serif;  /*setting bg color to cream */
+    background: rgb(150,222,192);
+    background: radial-gradient(circle, rgba(150,222,192,1) 0%, rgba(150,216,222,0.03982843137254899) 39%, rgba(150,180,222,1) 100%);    
 }
 /* i want a 2-column grid w/ 4 main elements in the grid*/
 .flex-container {
     padding: 0 4px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 10px;
 }
 @media (max-width: 800px) {
     .flex-container {
         flex-direction: column;
     }
 }
-.flex-container img {
-    margin: 4px;
+#pfp {
+    width: 400px;
+    height: auto;
 }
 .intro {
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+
 }
 .flex1 {
     flex: 50%;
-    background-color: #f2ebe2;
     margin: auto;
-    border: #F2EBE2;
+    border: 10px solid #96d8de;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
 }
 .flex2 {
-    background-color: #197C9B;
     flex: 50%;
     margin: auto;
-    border: #197C9B;
+    border: 10px solid #96dec0;
     border-radius: 8px;
     padding: 20px;
 }
 .flex3 {
-    background-color: #9b3819;
+    padding: 20px;
     flex:100%;
-    border: #9b3819;
+    border: 10px solid #96b4de;
     border-radius: 8px;
 }
 #navbar {
     list-style: none;
     margin: 10px;
-    padding: 2px;
+    padding: 10px;
 }
 #navbar li {
     float: right;
@@ -56,14 +60,15 @@ body {
 #navbar li a {
     text-align: center;
     padding: 10px;
-    width: 80px;
+    width: 150px;
+    font: small-caps bold 2em 'Dancing Script', cursive;
     text-decoration: none;
     color:black;
     box-shadow: inset 0 0 0 0 #F2EBE2;
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
 }
 #navbar li a:hover {
-    box-shadow: inset 100px 0 0 0 #9b3819;
+    box-shadow: inset 150px 0 0 0 #96dec0;
     color: #F2EBE2;
 }
 a {
@@ -76,18 +81,18 @@ footer {
     padding: 50px;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
-
 }
 footer a {
     text-decoration: none;
-    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    color: black;
     padding: 10px;
     width: 80px;
     box-shadow: inset 0 0 0 0 #F2EBE2;
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
 }
 footer a:hover {
-    box-shadow: inset 100px 0 0 0 #197C9B;
+    box-shadow: inset 100px 0 0 0 #96d8de;
     color: #F2EBE2;
 }
 .material-symbols-outlined {
@@ -95,5 +100,18 @@ footer a:hover {
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 48
+  'opsz' 48;
+  display: inline-block;
+   
+}
+.contact {
+    white-space: nowrap;
+    color: black;
+}
+.contact div {
+    display: inline-block;
+}
+.contact a {
+    display: inline-block;
+    color: black;
 }
