@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Sofia Sans', sans-serif;  /*setting bg color to cream */
+    font-family: 'Sofia Sans', sans-serif; 
+    font-size: 1.5rem;
 
 }
 .flex-container {
@@ -17,6 +18,9 @@ body {
         flex-direction: column;
     }
 }
+#circle-frame {
+    border-radius: 100%;
+}
 #pfp {
     width: 400px;
     height: auto;
@@ -24,22 +28,25 @@ body {
 .intro {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
-    color: #3C1F39;
 }
 .flex1 {
-    flex: 50%;
-    margin: auto;
-    border: 10px solid #C3E0C6;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-}
-.flex2 {
     flex: 50%;
     margin: auto;
     border: 10px solid #3C1F39;
     border-radius: 20px;
     padding: 20px;
+    text-align: center;
+    background-color: #c3e0c6;
+    
+}
+.flex2 {
+    flex: 50%;
+    margin: auto;
+    border: 10px solid #c3e0c6;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #3C1F39;   
+    color: #C3E0C6; 
 }
 .flex3 {
     padding: 20px;
@@ -54,14 +61,15 @@ body {
 }
 #navbar li {
     float: left;
+    padding-left: 30px;
 }
 #navbar li a {
     text-align: center;
-    padding: 10px;
+    padding-left: 20px;
     width: 150px;
     font: small-caps bold 2em 'Dancing Script', cursive;
     text-decoration: none;
-    color:black;
+    color:#C3E0C6;
     box-shadow: inset 0 0 0 0 #F2EBE2;
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
 }
@@ -142,5 +150,5 @@ footer a:hover {
     display: inline-block;
     color: black;
     float: left;
-    padding-right: 150px;    
+    padding-right: 250px;    
 }
